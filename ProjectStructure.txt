@@ -1,8 +1,9 @@
 - libs
+  - shared_lib: dynamic
   - lib1: static
   - lib2: static, dynamic, boost
   - lib3: uses lib1, lib2, boost
-- project1: uses static lib3, boost
+- project1: uses static lib3, shared_lib, boost
 - project2: uses dynamic lib2
   - lib2.dll/so
   - BaseData
