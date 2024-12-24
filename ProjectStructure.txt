@@ -1,0 +1,13 @@
+- libs
+  - lib1: static
+  - lib2: static, dynamic, boost
+  - lib3: uses lib1, lib2, boost
+- project1: uses static lib3, boost
+- project2: uses dynamic lib2
+  - lib2.dll/so
+  - BaseData
+    - hello.txt
+    - hello2.txt
+- BaseData
+  - hello.txt
+  - hello2.txt
